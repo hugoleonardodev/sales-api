@@ -8,28 +8,29 @@
     "extends": [
       "airbnb-base",
       "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier",
-      "plugin:prettier/recommended"
+      "plugin:@typescript-eslint/recommended"
+    //   "prettier",
+    //   "plugin:prettier/recommended"
     ],
     "globals": {
-      "Atomics": "readonly",
+      "message": "readonly",
       "SharedArrayBuffer": "readonly"
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-      "ecmaVersion": 11,
+      "ecmaVersion": 12,
       "sourceType": "module"
     },
     "plugins": [
       "@typescript-eslint",
-      "prettier",
+    //   "eslint-plugin-prettier",
       "eslint-plugin-import-helpers"
     ],
     "rules": {
       "semi": ["error", "never"],
       "quotes": ["error", "single", { "allowTemplateLiterals": true }],
       "no-new": "off",
+      "indent": ["error", 4],
       "no-prototype-builtins": "off",
       "no-restricted-syntax": "off",
       "max-classes-per-file": "off",
@@ -60,7 +61,11 @@
       }],
       "no-underscore-dangle": "off",
       "@typescript-eslint/camelcase": "off",
-      "prettier/prettier": ["error", {"singleQuote": true, "parser": "flow", "semi": false}],
+    //   "prettier/prettier": ["warn", {"singleQuote": true, "parser": "flow", "semi": false}],
+      "lines-between-class-members": "off",
+      "no-spaced-func": "error",
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off",
       "class-methods-use-this": "off",
       "import/extensions": [
         "error",
