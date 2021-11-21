@@ -3,6 +3,7 @@ import cors from 'cors'
 import express, { NextFunction, Request, Response } from 'express'
 
 import AppError from '@shared/errors/AppError'
+import '@shared/typeorm'
 
 import routes from './routes'
 
