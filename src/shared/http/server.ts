@@ -12,7 +12,7 @@ app.use(express.json())
 
 app.use(routes)
 
-// error custom middleware
+// custom error middleware
 app.use(
     (error: Error, request: Request, response: Response, _next: NextFunction) => {
         if (error instanceof AppError) {
