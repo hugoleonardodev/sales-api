@@ -82,8 +82,12 @@
                 }
             },
             {
+                "selector": "classProperty",
+                "format": ["PascalCase", "snake_case"]
+            },
+            {
                 "selector": "class",
-                "format": ["PascalCase", "snake_case"],
+                "format": ["PascalCase"],
                 "custom": {
                     "regex": "^[A-Z]",
                     "match": true
@@ -114,7 +118,7 @@
             {
                 "selector": "property",
                 "modifiers": ["readonly"],
-                "format": ["PascalCase", "camelCase"]
+                "format": ["PascalCase", "camelCase", "snake_case"]
             },
             {
                 "selector": "enumMember",
@@ -130,7 +134,7 @@
         "no-underscore-dangle": "off",
         "@typescript-eslint/camelcase": "off",
         //   "prettier/prettier": ["warn", {"singleQuote": true, "parser": "flow", "semi": false}],
-        "lines-between-class-members": "off",
+        // "lines-between-class-members": "off",
         "no-spaced-func": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "off",
