@@ -54,7 +54,8 @@
             {
                 "cases": {
                     "camelCase": true,
-                    "pascalCase": true
+                    "pascalCase": true,
+                    "kebabCase": true
                 }
             }
         ],
@@ -82,7 +83,7 @@
             },
             {
                 "selector": "class",
-                "format": ["PascalCase"],
+                "format": ["PascalCase", "snake_case"],
                 "custom": {
                     "regex": "^[A-Z]",
                     "match": true
