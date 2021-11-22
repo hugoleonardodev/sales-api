@@ -83,7 +83,7 @@
             },
             {
                 "selector": "classProperty",
-                "format": ["PascalCase", "snake_case"]
+                "format": ["PascalCase", "snake_case", "camelCase"]
             },
             {
                 "selector": "class",

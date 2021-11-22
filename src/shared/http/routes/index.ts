@@ -1,9 +1,9 @@
 import { Router } from 'express'
 
+import productsRouter from '@modules/products/routes/products.routes'
+
 const routes = Router()
 
-routes.get('/', (request, response) => {
-    return response.json({ message: 'Sales Api Listen on Port 3000 !!' })
-})
+routes.use('/products', productsRouter)
 
 export default routes
