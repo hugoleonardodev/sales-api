@@ -2,11 +2,11 @@ import { getCustomRepository } from 'typeorm'
 
 import AppError from '@shared/errors/AppError'
 
-import { Product } from '../typeorm/entities'
-import { ProductsRepository } from '../typeorm/repositories'
+import Product from '../typeorm/entities/Product'
+import ProductsRepository from '../typeorm/repositories/ProductsRepository'
 
 interface IShowProductService {
-    id: number
+    id: string
 }
 
 class ShowProductService {
